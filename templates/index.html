@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FWI Prediction - Algerian Forest Fires</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background-color: #d0e7f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FWI Prediction for Algerian Forest Fires Dataset</h1>
+        <h2>Data Set Information</h2>
+        <p>
+            The dataset includes 244 instances from two regions in Algeria: Bejaia (northeast) and Sidi Bel-abbes (northwest),
+            with 122 instances per region. The data covers the period from June 2012 to September 2012 and consists of 11 attributes and 1 output class.
+        </p>
+        <p>The instances are classified into two categories: <b>Fire</b> (138 cases) and <b>Not Fire</b> (106 cases).</p>
+        
+        <h2>Attribute Information</h2>
+        <ul>
+            <li><b>Date:</b> (DD/MM/YYYY) - Observations from June to September 2012</li>
+            <li><b>Temp:</b> Temperature (max) in °C (22 to 42)</li>
+            <li><b>RH:</b> Relative Humidity (%) (21 to 90)</li>
+            <li><b>Ws:</b> Wind speed (km/h) (6 to 29)</li>
+            <li><b>Rain:</b> Total daily rainfall (mm) (0 to 16.8)</li>
+        </ul>
+        
+        <h2>FWI Components</h2>
+        <ul>
+            <li><b>Fine Fuel Moisture Code (FFMC):</b> 28.6 to 92.5</li>
+            <li><b>Duff Moisture Code (DMC):</b> 1.1 to 65.9</li>
+            <li><b>Drought Code (DC):</b> 7 to 220.4</li>
+            <li><b>Initial Spread Index (ISI):</b> 0 to 18.5</li>
+            <li><b>Buildup Index (BUI):</b> 1.1 to 68</li>
+            <li><b>Fire Weather Index (FWI):</b> 0 to 31.1</li>
+            <li><b>Class:</b> Fire / Not Fire</li>
+        </ul>
+
+        <div class="btn-container">
+            <a href="/predictdata" class="btn">Predict Fire Risk</a>
+        </div>
+    </div>
+</body>
+</html>
